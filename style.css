@@ -1,0 +1,46 @@
+#estucturaHeader{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: aqua;
+        margin: 13px;
+        cursor: pointer;
+
+        
+}
+#logo {
+    
+    width: 100px; 
+    border-color: black;
+    border:solid 1px;
+}
+
+#precio-total {
+    font-size: 1.5em;
+}
+
+#formulario-principal{ 
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ee0c0c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#alineacionFormulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    
+}
+/* #alineaciontextarea{ */
+
+   
+/* } */
+
