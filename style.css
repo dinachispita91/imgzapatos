@@ -1,9 +1,9 @@
 #estucturaHeader{
-    display: flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-        background-color: aqua;
+        background-color: #90f1a8;
         margin: 13px;
         cursor: pointer;
 
@@ -17,30 +17,103 @@
 }
 
 #precio-total {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
-
 #formulario-principal{ 
-    max-width: 400px;
+   
     margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ee0c0c;
+    padding: 18px 20px;
+    border: 1px solid #0cee44;
     border-radius: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-
+    
+  
 }
 
 #alineacionFormulario{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+   
+
 
     
 }
+
+#izqformulario{
+    gap: .3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: .3rem;
+
+
+
+
+
+
+}
+
+#producto{
+    
+ 
+    margin: 20px auto;
+    gap: 3rem;
+    padding: 13px;
+    border: 1px solid #0cee44;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#eliminarproducto{
+ display: flex;
+ flex-direction: column;
+}
+/* #boton{    */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    padding: 9px; */
+
+/* } */
 /* #alineaciontextarea{ */
 
    
 /* } */
 
+.buton{
+   
+    text-align: center;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+  background-color:#56ce74;
+    padding:9px 20px;
+     text-decoration: none;
+    border-radius: 4%;
+    margin: 11px;
+
+}
+.buton:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.eliminarProducto{
+    text-align: center;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+  background-color:rgb(216, 47, 47);
+    padding:9px 20px;
+     text-decoration: none;
+    border-radius: 4%;
+    margin: 11px;
+}
+.eliminarProducto:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
