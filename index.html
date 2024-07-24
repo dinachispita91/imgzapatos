@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="obj.js"></script>
+    <script defer src="obj.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -20,10 +20,10 @@
         <input type="text" id="nombre" name="nombre" />
 
         <label class="label" for="precio">Precio:</label>
-        <input type="texto" id="precio" name="precio" />
+        <input type="number" id="precio" name="precio" />
 
-        <label class="label" for="img">Immagen:</label>
-        <input type="url" id="" name="Imagen" />
+        <label class="label" for="imagen">Immagen:</label>
+        <input type="text" id="imagen" name="Imagen" />
 
         <button class="buton" id="boton" type="submit">Crear Producto</button>
       </div>
@@ -32,27 +32,11 @@
         <textarea
           name="descripcion"
           rows="9"
+          id="descripcion"
           placeholder="escribe aqui tu comentario"
         ></textarea>
       </div>
     </form>
-
-    <div id="producto">
-      <div>
-        <img src="./salonnegro.jpg" alt="tacon de salon negro de charol " />
-      </div>
-      <div>
-        <h2>Tacón de salón negro</h2>
-        <p>
-          Tacón de salón negro de charol tacon , aguja de 15cm <br />
-          con detalles de tela en los laterales (Los pies no viene incluidos)
-        </p>
-      </div>
-
-      <div id="aliminarproducto">
-        <h2>precio</h2>
-        <button class="eliminarProducto">eliminar</button>
-      </div>
-    </div>
+    <div id="cajon"></div>
   </body>
 </html>

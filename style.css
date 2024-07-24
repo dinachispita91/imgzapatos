@@ -48,11 +48,11 @@
     align-items: center;
     height: .3rem;
 
+}
 
-
-
-
-
+#cajon{
+    display: flex;
+    flex-direction: column;
 }
 
 #producto{
@@ -66,6 +66,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 #eliminarproducto{
  display: flex;
