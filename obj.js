@@ -1,16 +1,22 @@
 
-// let articulos ={
-//   nombre: 'tacon negro',
-//   precio:'49,30',
-//   imagen:'/images.jpg'
-// } 
-// {
-//   nombre: 'sandalia azul',
-//   precio:'49.99',
-//   imagen:'./'
-// } 
-// {
-//   nombre: 'tacon negro',
-//   precio:'49,30',
-//   imagen:'/images.jpg'
-// } 
+const nuevoProducto = document.getElementById ('form')
+// Form.andsubmit = anadirProducto
+
+let productos = [
+    {
+        nombre: 'tacon salon',
+        precio: 39.99,
+        imagen: './salonnegro.jpg'
+    } 
+  ]   
+    function añadirProducto(obj) {
+        return obj.nombre
+        
+    }
+       
+
+       
+   
+
+ console.log(nombre)
+ 
