@@ -13,16 +13,14 @@ console.log(nuevoProducto);
 nuevoProducto.onsubmit = addProduct
 // =================================================
 // onSubmit () le permite interceptar la información 
-// de la transacción autorizada antes de que el
-//  formulario realice un POST en la URL definida 
-//  en kr-post-success-url.
+//cuando se envia.
 // =====================================================
 let producto =[]
 
 function addProduct(ev) {
-    ev.preventDefault()
+    ev.preventDefault()//no refrescarpag (botón)
     console.log('funcion agregar producto');
-    let nombre= document.getElementById('nombre').value
+    let nombre= document.getElementById('nombre').value//(value valor de lo que esta dentro de cada cosa)
     console.log(nombre);
 
     let precio= document.getElementById('precio').value
@@ -36,7 +34,7 @@ function addProduct(ev) {
 
     producto.push({nombre,precio,imagen,descripcion})
     console.log(producto);
-    mostrarProducto(producto)
+    mostrarProducto(producto)//ejecutar
     sumar(producto)
 }
 // ===============================================
@@ -49,8 +47,8 @@ function mostrarProducto(miarray) {
     for (let i = 0; i < miarray.length; i++) {
         console.log(i);
         
-        let imagen =`<div id="producto"><div><img src="${miarray[i].imagen}" alt="tacon de salon
-negro de charol " /></div>`
+        let imagen =`<div id="producto"><div><img src="${miarray[i].imagen}" alt="
+ " /></div>`
 
 let descripcion=`<div>
 <h2> ${miarray[i].nombre}</h2>
@@ -78,7 +76,10 @@ function sumar(sumAarray) {
 
         }
     let header = document.getElementById('precio-total')
+    
     console.log(header);
+   header.innerHTML= ` Total  ${total} € `
+
 }
 
 
