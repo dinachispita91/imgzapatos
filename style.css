@@ -10,11 +10,12 @@
         
 }
 #logo {
-    
+    height: 80px;
     width: 100px; 
     border-color: black;
     border:solid 1px;
 }
+
 
 #precio-total {
     font-size: 1.5rem;
